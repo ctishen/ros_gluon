@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
   ros::NodeHandle nh_;
 
   ros::Subscriber sub_jointstates =
-    nh_.subscribe("/joint_states", 5, jointStatesCallback);
+    nh_.subscribe("/joint_states", 3, jointStatesCallback);
     //Initialize the controller
     ActuatorController * pController = ActuatorController::initController();
     //ec Define an error type, ec==0x00 means no error, ec will be passed to pcontroller-> lookupActuators(ec) by reference,
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
       if (!s_jointStatesList.empty()) {
         sensor_msgs::JointState js_data = s_jointStatesList.front();
         s_jointStatesList.pop();
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < 4; i++) {
           ActuatorController::UnifiedID actuator = uIDArray.at(i);
           ROS_INFO("jointstate_%d, %s, %f", i+1, js_data.name[i].c_str(), js_data.position[i]);
           pController->setPosition(actuator.actuatorID, RAD_TO_POS(js_data.position[i]));

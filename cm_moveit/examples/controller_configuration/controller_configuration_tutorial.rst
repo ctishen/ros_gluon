@@ -148,8 +148,6 @@ Fake Controller Yaml File
          - joint_2
          - joint_3
          - joint_4
-         - joint_5
-         - joint_6
      - name: fake_gripper_controller
        joints:
          []

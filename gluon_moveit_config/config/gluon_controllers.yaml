@@ -13,8 +13,6 @@ hardware_interface:
     - axis_joint_2
     - axis_joint_3
     - axis_joint_4
-    - axis_joint_5
-    - axis_joint_6
   sim_control_mode: 0  # 0: position, 1: velocity
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS
@@ -30,5 +28,3 @@ gluon_controller:
       - axis_joint_2
       - axis_joint_3
       - axis_joint_4
-      - axis_joint_5
-      - axis_joint_6

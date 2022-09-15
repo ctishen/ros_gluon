@@ -78,16 +78,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        5_Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        6_Link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
