@@ -36,7 +36,7 @@
         <joint name="axis_joint_4" value="-0.4778" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="end_effector" parent_link="6_Link" group="gluon" parent_group="gluon" />
+    <end_effector name="end_effector" parent_link="4_Link" group="gluon" parent_group="gluon" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="world_joint" type="fixed" parent_frame="world" child_link="dummy" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
